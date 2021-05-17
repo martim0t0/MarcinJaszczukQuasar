@@ -1,106 +1,47 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
-        />
+  <div class="q-pa-md">
+    <q-layout view="lHh lpr lFf" container style="height: 400px" class="shadow-2 rounded-borders">
+      <q-header elevated>
+        <q-toolbar class="constrain">
+          <q-btn flat round dense icon="menu" class="q-mr-sm" />
+          <q-avatar>
+            <img src="https://en.gravatar.com/userimage/206376743/2de811e12db35a3deb20dd4838ee2c47.jpeg">
+          </q-avatar>
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
+          <q-toolbar-title>Marcin Jaszczuk</q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-    </q-header>
+          <q-btn flat round dense icon="whatshot" />
+        </q-toolbar>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      content-class="bg-grey-1"
-    >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
+        <q-tabs v-model="tab">
+          <q-route-tab name="home" label="Home" to="/home"/>
+          <q-route-tab name="about" label="About" to="/about"/>
+          <q-route-tab name="blog" label="Blog" to="/blog"/>
+        </q-tabs>
+      </q-header>
 
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-  </q-layout>
+      <!-- <q-page-container>
+        <q-page class="q-pa-md">
+          <p v-for="n in 15" :key="n">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nihil praesentium molestias a adipisci, dolore vitae odit, quidem consequatur optio voluptates asperiores pariatur eos numquam rerum delectus commodi perferendis voluptate?
+          </p>
+        </q-page>
+      </q-page-container> -->
+
+    </q-layout>
+  </div>
 </template>
 
-<script>
-import EssentialLink from 'components/EssentialLink.vue'
 
-const linksData = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-];
+
+<script>
+
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink },
   data () {
     return {
-      leftDrawerOpen: false,
-      essentialLinks: linksData
+
     }
   }
 }
