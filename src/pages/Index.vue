@@ -9,13 +9,17 @@
         Hey, I'm Marcin...
       </div>
 
+      <div class="text-h6" style="opacity:.4">
+        a full-stack developer and artist
+      </div>
+
       <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue-grey-8"
-        unelevated
+        class="q-mt-xl glossy"
+        color="blue-grey-3"
+        text-color="primary"
+        push
         to="/home"
-        label="Homepage"
+        label="See my page"
         no-caps
       />
     </div>

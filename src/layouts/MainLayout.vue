@@ -16,6 +16,42 @@
           <q-route-tab name="home" label="Home" to="/home"/>
           <q-route-tab name="about" label="About" to="/about"/>
           <q-route-tab name="blog" label="Blog" to="/blog"/>
+
+        <q-btn-dropdown
+          auto-close
+          flat
+          label=""
+          stretch
+        >
+          <q-list
+          class="bg-blue-grey-7 text-white"
+          >
+
+            <q-item clickable @click="tab = 'coding'">
+              <q-item-section>Coding/Programming</q-item-section>
+            </q-item>
+
+            <q-item clickable @click="tab = 'food'">
+              <q-item-section>Food & Cooking</q-item-section>
+            </q-item>
+
+            <q-item clickable @click="tab = 'photography'">
+              <q-item-section>Photograpy</q-item-section>
+            </q-item>
+
+            <q-item clickable @click="tab = 'stoicism'">
+              <q-item-section>Stoicism</q-item-section>
+            </q-item>
+
+            <q-item clickable @click="tab = 'outdoors'">
+              <q-item-section>The Outdoors</q-item-section>
+            </q-item>
+
+          </q-list>
+        </q-btn-dropdown>
+
+
+
         </q-tabs>
       </q-header>
 
@@ -84,5 +120,7 @@ export default {
 
 
 <style lang="sass">
-
+  // .q-menu
+  //   transition-show="flip-right"
+  //   transition-hide="flip-left"
 </style>
