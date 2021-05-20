@@ -77,3 +77,9 @@ export default {
   }
 }
 </script>
+
+
+<style lang="sass" scoped>
+  .constrain
+    padding-block-start: 10px
+</style>

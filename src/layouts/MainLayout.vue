@@ -58,7 +58,7 @@
 
 
       <q-footer elevated>
-        <q-toolbar class="constrain text-blue-grey-3">
+        <q-toolbar class="text-blue-grey-3">
           <q-btn flat round color="bg-blue-grey-3" icon="eva-copyright-outline" />
           <q-toolbar-title class="text-caption">© MirroMar 2021</q-toolbar-title>
           <q-btn
@@ -119,8 +119,7 @@ export default {
 </script>
 
 
-<style lang="sass">
-  // .q-menu
-  //   transition-show="flip-right"
-  //   transition-hide="flip-left"
+<style lang="sass" scoped>
+  .constrain
+    padding-block-start: 10px
 </style>
