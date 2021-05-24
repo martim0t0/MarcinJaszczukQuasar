@@ -1,13 +1,26 @@
 <template>
   <div class="fullscreen bg-primary text-white text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
+      <div style="font-size: 25vh">
         404
       </div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
+    <transition
+      appear
+      enter-active-class="animated bounceInLeft"
+    >
+      <div class="absolute-left">
+        <img src="../assets/WhollyMackrel.png">
       </div>
+    </transition>
+
+
+      <div class="text-h2" style="opacity:.4">
+        Nothing here
+        except for this weird fish...
+      </div>
+
+
 
       <q-btn
         class="q-mt-xl"
@@ -27,3 +40,8 @@ export default {
   name: 'Error404'
 }
 </script>
+
+
+<style lang="sass">
+  .slide-enter
+</style>

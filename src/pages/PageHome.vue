@@ -11,7 +11,7 @@
         </div>
       </q-card-section>
 
-      <q-card-section class="q-pt-none">
+      <q-card-section class="q-pt-none text-body1">
 <!-- {         {post.content }} -->
       </q-card-section>
 

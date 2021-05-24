@@ -9,7 +9,7 @@
         <div class="text-h4" style="opacity:.5">{{ post.title }}</div>
       </q-card-section>
 
-      <q-card-section class="q-pt-none">
+      <q-card-section class="q-pt-none text-body1">
         {{ post.content }}
       </q-card-section>
 

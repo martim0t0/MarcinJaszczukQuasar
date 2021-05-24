@@ -28,7 +28,7 @@
           >
 
             <q-item clickable @click="tab = 'coding'">
-              <q-item-section>Coding/Programming</q-item-section>
+              <q-item-section>Coding & Programming</q-item-section>
             </q-item>
 
             <q-item clickable @click="tab = 'food'">
@@ -36,7 +36,8 @@
             </q-item>
 
             <q-item clickable @click="tab = 'photography'">
-              <q-item-section>Photograpy</q-item-section>
+              <q-item-section>Photograpy & Art
+              </q-item-section>
             </q-item>
 
             <q-item clickable @click="tab = 'stoicism'">
