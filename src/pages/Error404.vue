@@ -5,19 +5,20 @@
         404
       </div>
 
-    <transition
-      appear
-      enter-active-class="animated bounceInLeft"
-    >
-      <div class="absolute-left">
-        <img src="../assets/WhollyMackrel.png">
-      </div>
-    </transition>
+      <transition
+        appear
+         enter-active-class="animated bounceInLeft appear"
+         eave-active-class="animated bounceOutLeft"
+      >
+        <div v-show="visible" class="absolute-left">
+              <img src="../assets/WhollyMackrel.png">
+        </div>
+      </transition>
 
 
       <div class="text-h2" style="opacity:.4">
         Nothing here
-        except for this weird fish...
+        except this weird fish...
       </div>
 
 
@@ -37,11 +38,18 @@
 
 <script>
 export default {
-  name: 'Error404'
+  name: 'Error404',
+  data () {
+    return {
+     visible : true,
+    }
+  },
 }
 </script>
 
 
 <style lang="sass">
-  .slide-enter
+  .enter-active-class
+    bounceInLeft
+
 </style>
