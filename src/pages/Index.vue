@@ -16,7 +16,7 @@
       <q-btn
         class="q-mt-xl glossy"
         color="blue-grey-3"
-        text-color="primary"
+        text-color="blue-grey-8"
         push
         to="/home"
         label="See my page"

@@ -5,15 +5,15 @@
         404
       </div>
 
+        <div v-show="visible" class="absolute-left">
       <transition
         appear
          enter-active-class="animated bounceInLeft appear"
-         eave-active-class="animated bounceOutLeft"
+         leave-active-class="animated bounceOutLeft"
       >
-        <div v-show="visible" class="absolute-left">
               <img src="../assets/WhollyMackrel.png">
-        </div>
       </transition>
+        </div>
 
 
       <div class="text-h2" style="opacity:.4">
@@ -25,12 +25,13 @@
 
       <q-btn
         class="q-mt-xl"
-        color="white"
+        color="blue-grey-3"
         text-color="blue-grey-8"
         unelevated
         to="/"
         label="Go Home"
         no-caps
+        glossy
       />
     </div>
   </div>
