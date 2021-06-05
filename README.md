@@ -2,6 +2,8 @@
 
 Personal Website of Marcin Jaszczuk
 
+This is where all of my personal art work and things I'm interested in go. It's who I am.
+
 ## Install the dependencies
 ```bash
 npm install
