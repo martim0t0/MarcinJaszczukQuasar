@@ -19,20 +19,6 @@
         </div>
       </q-card-section>
 
-      <q-card-section class="q-pt-none text-body1">
-<!-- {         {post.content }} -->
-      </q-card-section>
-
-
-      <q-card-section class="q-pt-none">
-        <!-- :src="post.imageUrl" -->
-      </q-card-section>
-
-      <q-separator inset />
-
-      <q-card-section class="text-caption">
-        <!-- {{ post.date }} -->
-      </q-card-section>
     </q-card>
   </q-page>
 </template>

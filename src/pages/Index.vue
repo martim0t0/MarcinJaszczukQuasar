@@ -1,17 +1,23 @@
 <template>
   <div class="fullscreen bg-primary text-white text-center q-pa-md flex flex-center">
     <div>
+
       <div>
-        <img src="../assets/lowPolyMe.png">
+
+        <p>
+          <img src="../assets/lowPolyMe.png">
+        </p>
+
+        <p class="text-h2" style="opacity:.4">
+          Hey, I'm Marcin...
+        </p>
+
+        <p class="text-h6" style="opacity:.7">
+          a full-stack developer and artist
+        </p>
+
       </div>
 
-      <div class="text-h2" style="opacity:.4">
-        Hey, I'm Marcin...
-      </div>
-
-      <div class="text-h6" style="opacity:.4">
-        a full-stack developer and artist
-      </div>
 
       <q-btn
         class="q-mt-xl glossy"
