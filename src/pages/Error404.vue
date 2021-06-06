@@ -5,12 +5,12 @@
         404
       </div>
 
-        <div v-show="visible" class="absolute-left">
-      <transition
-        appear
-         enter-active-class="animated bounceInLeft appear"
-         leave-active-class="animated bounceOutLeft"
-      >
+      <div v-show="visible" class="absolute-left" transition-show="bounceInLeft">
+        <transition
+          appear
+          enter-active-class="animated bounceInLeft appear"
+          leave-active-class="animated bounceOutLeft"
+        >
               <img src="../assets/WhollyMackrel.png">
       </transition>
         </div>
