@@ -37,6 +37,7 @@
       <q-carousel-slide :name="2" img-src="../assets/PompousPig.png" />
       <q-carousel-slide :name="3" img-src="../assets/orzel_drawing.png" />
       <q-carousel-slide :name="4" img-src="../assets/RedWingedBlackbird.png" />
+      <q-carousel-slide :name="5" img-src="../assets/WhollyMackrel.png" />
     </q-carousel>
   </div>
 
