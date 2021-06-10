@@ -41,7 +41,7 @@
             </q-item>
 
             <q-item clickable @click="tab = 'stoicism'">
-              <q-item-section>Stoicism</q-item-section>
+              <q-item-section>Living Life</q-item-section>
             </q-item>
 
             <q-item clickable @click="tab = 'outdoors'">
