@@ -33,11 +33,11 @@
       @mouseenter="autoplay = false"
       @mouseleave="autoplay = true"
     >
-      <q-carousel-slide :name="1" img-src="../assets/BlueJay.png" />
-      <q-carousel-slide :name="2" img-src="../assets/PompousPig.png" />
-      <q-carousel-slide :name="3" img-src="../assets/orzel_drawing.png" />
-      <q-carousel-slide :name="4" img-src="../assets/RedWingedBlackbird.png" />
-      <q-carousel-slide :name="5" img-src="../assets/WhollyMackrel.png" />
+      <q-carousel-slide :name="1" :ratio="1" img-src="../assets/BlueJay.png" />
+      <q-carousel-slide :name="2" :ratio="1" img-src="../assets/PompousPig.png" />
+      <q-carousel-slide :name="3" :ratio="1" img-src="../assets/orzel_drawing.png" />
+      <q-carousel-slide :name="4" :ratio="1" img-src="../assets/RedWingedBlackbird.png" />
+      <q-carousel-slide :name="5" :ratio="1" img-src="../assets/WhollyMackrel.png" />
     </q-carousel>
   </div>
 
