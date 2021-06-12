@@ -7,6 +7,7 @@
 
       <div v-show="visible" class="absolute-left" transition-show="bounceInLeft">
         <transition
+          animated
           appear
           enter-active-class="animated bounceInLeft appear"
           leave-active-class="animated bounceOutLeft"
