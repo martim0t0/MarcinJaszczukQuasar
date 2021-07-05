@@ -59,5 +59,9 @@ export default {
 
 <style lang="sass">
   .q-carousel
-    object-fit: contain
+    object-fit: scale-down !important
+  .q-carousel-slide
+    object-fit: scale-down !important
+  .shrinkImg
+    object-fit: scale-down !important
 </style>

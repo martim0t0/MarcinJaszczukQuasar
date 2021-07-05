@@ -2,9 +2,9 @@
     <q-layout view="lHh lpr lFf">
       <q-header elevated>
         <q-toolbar class="constrain text-blue-grey-3">
-          <q-btn flat round dense icon="menu" class="q-mr-sm" />
+          <q-btn flat round dense icon="menu" class="q-mr-sm"/>
           <q-avatar>
-            <img src="https://en.gravatar.com/userimage/206376743/2de811e12db35a3deb20dd4838ee2c47.jpeg">
+            <img src="../assets/lowPolyMe.png">
           </q-avatar>
 
           <q-toolbar-title class="text-bold">Marcin Jaszczuk</q-toolbar-title>
@@ -22,6 +22,7 @@
           flat
           label=""
           stretch
+          v-if="blog"
         >
           <q-list
           class="bg-blue-grey-7 text-white"
@@ -59,7 +60,7 @@
 
 
       <q-footer elevated>
-        <q-toolbar class="text-blue-grey-3">
+        <q-toolbar class="text-blue-grey-3 constrain">
           <q-btn flat round color="bg-blue-grey-3" icon="eva-copyright-outline" />
           <q-toolbar-title class="text-caption">© MirroMar 2021</q-toolbar-title>
           <q-btn
@@ -113,9 +114,12 @@ export default {
   name: 'MainLayout',
   data () {
     return {
-
+      blog: false,
     }
-  }
+  },
+  methods: {
+
+  },
 }
 </script>
 

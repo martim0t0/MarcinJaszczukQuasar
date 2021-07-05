@@ -5,15 +5,12 @@
         404
       </div>
 
-      <div v-show="visible" class="absolute-left" transition-show="bounceInLeft">
-        <transition
-          animated
-          appear
-          enter-active-class="animated bounceInLeft appear"
-          leave-active-class="animated bounceOutLeft"
-        >
+
+      <div
+        class="animated bounceInLeft absolute-left"
+        v-if="show"
+      >
               <img src="../assets/WhollyMackrel.png">
-      </transition>
         </div>
 
 
@@ -43,9 +40,12 @@ export default {
   name: 'Error404',
   data () {
     return {
-     visible : true,
+     show : false
     }
   },
+  mounted() {
+    this.show = true;
+  }
 }
 </script>
 
