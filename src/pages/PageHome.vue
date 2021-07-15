@@ -8,10 +8,10 @@
       <q-card-section>
         <div class="text-body1" style="opacity:.5">
           <p class="text-h4">
-            - Time for some creative fun! -
+            Figuring Stuff Out
           </p>
           <p>
-            Hey, welcome to my home page! It’s kind of a digital journal that contains things I’m into. Have a look around, stop by the blog where I go through some topics that interest me… or take a look at my art work below.
+            Hey, welcome to my home page! It’s kind of a digital journal that contains things I like to figure out. Life is about figuring things out and you're allowed to have fun doing it.
           </p>
           <p>
             Everything on this website is created by me from scratch. Every image here, every line of code, and every thought. I put a lot of work into learning how to do all of this stuff, so I hope you enjoy it!
@@ -33,6 +33,8 @@
 
       <q-card-section class="flex-center flex-center constrain" style="opacity:.5">
         <p>One of my favorite events is an airshow and I always have my Sony mirrorless camera!</p>
+        <p>When I'm not figuring out how to take pictures, I'm figuring out how to draw things digitally or create programs.</p>
+        <p>Some of my favorite technologies are Linux, Vue.js, Python, and SQL. Lately, I've been quite interested in how networks operate and trying to figure out TCP/IP.</p>
       </q-card-section>
     </q-card>
 
@@ -56,6 +58,24 @@
       <q-carousel-slide :name="5" img-src="../assets/WhollyMackrel.png" />
     </q-carousel>
   </div>
+
+
+    <q-card bordered
+      class="my-card bg-teal-2 q-mb-md">
+        <q-card-section>
+        <div class="text-body1" style="opacity:.5">
+          <p class="text-h4">
+            Direction of this site
+          </p>
+          <p>
+            Currently, this site is just a static blog. I'm using it as a testing ground for what I can get away with at zero monetary cost to me. So far, this site has only cost the purchase of the www.marcinjaszczuk.win domain name at $11.99 for five years.
+          </p>
+          <p>
+            The next things that will be added to this site will be an administrator page for blog posts and a user authentication system so that people can leave comments.
+          </p>
+        </div>
+      </q-card-section>
+    </q-card>
 
   </q-page>
 </template>

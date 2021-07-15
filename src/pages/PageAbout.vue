@@ -12,7 +12,7 @@
       </q-card-section>
 
       <q-card-section class="q-pt-none text-body1">
-        <p style="opacity:.5">I'm another Polish immigrant in the Chicago 'burbs.</p>
+        <p style="opacity:.5">I'm just a person with an insatiable curiosity. As much as I love works of fiction, I'm drawn to the non-fiction section of a library because there are so many real things that seem like fiction.</p>
         <p style="opacity:.5">My family came here when I was a little kid and we settled in this area for a while, and now I'm the only one left here. This is by choice because I can't live where there isn't a Polish deli and I happen to really like the Chicago area, despite its many shortcomings... Hey, I like the weather, ok?</p>
         <!-- <img src="../assets/orzel_drawing.png" class="pic"> -->
       </q-card-section>

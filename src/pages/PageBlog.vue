@@ -10,8 +10,8 @@
       </q-card-section>
 
       <q-card-section class="q-pt-none text-body1" style="opacity:.5">
-        {{ post.content1 }}
-        {{ post.content2 }}
+        <p>{{ post.content1 }}</p>
+        <p>{{ post.content2 }}</p>
       </q-card-section>
 
 
@@ -55,7 +55,7 @@ export default {
           date: 'July 17, 2021',
           topic: 'memories',
           content1: 'This first post on my personal website is dedicated to my dad, Miroslaw Jaszczuk on what would have been his 73rd birthday. Even though he\'s no longer with us, there are still many memories and quirks that remind me of him every day. Through him, I learned that everyone has their faults, but that life is beautiful.',
-          caption: 'A special thanks to my cousing Marek H. for finding this pic.',
+          caption: 'A special thanks to my cousin Marek H. for finding this pic.',
           image: require('../assets/grandCanyonPops.jpg')
         },
         {
@@ -63,7 +63,8 @@ export default {
           title: 'Facebook: The 21st Century\'s Human Tragedy',
           date: 'May 19, 2021',
           topic: 'coding',
-          content1: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
+          content1: 'The most intelligent people in the world are scrambling to write the most complicated programs and algorithms humanity has ever seen. For what? Ads... They\'re trying to figure out how best to trick you into clicking on something...',
+          content2: 'This is a sad reality in today\'s world. It seems as though we\'re being manipulated into forefeiting our most valuable asset, time, to this void...',
           image: '../assets/grandCanyonPops.png'
         },
         {
