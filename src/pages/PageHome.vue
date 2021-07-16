@@ -23,10 +23,10 @@
     <q-card class="flex-center flex-center constrain bg-teal-2 q-mb-md text-body1">
       <q-parallax
         src="../assets/p51.png"
-        :height="200"
+        :height="160"
         >
 
-        <div class="absolute-bottom text-h6" style="opacity:.5">
+        <div class="absolute-bottom text-h5" style="opacity:.5">
           Aviation Photography
         </div>
       </q-parallax>
